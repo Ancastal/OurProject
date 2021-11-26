@@ -11,7 +11,6 @@
 		82B9BE9127511E75005FD447 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9BE9027511E75005FD447 /* ContentView.swift */; };
 		82B9BE9327511E77005FD447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B9BE9227511E77005FD447 /* Assets.xcassets */; };
 		82B9BE9627511E77005FD447 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B9BE9527511E77005FD447 /* Preview Assets.xcassets */; };
-		82B9BE9827511E77005FD447 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9BE9727511E77005FD447 /* Persistence.swift */; };
 		82B9BE9B27511E77005FD447 /* ProjectWomen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82B9BE9927511E77005FD447 /* ProjectWomen.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +20,6 @@
 		82B9BE9027511E75005FD447 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		82B9BE9227511E77005FD447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82B9BE9527511E77005FD447 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		82B9BE9727511E77005FD447 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		82B9BE9A27511E77005FD447 /* ProjectWomen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectWomen.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +56,6 @@
 				82B9BE8E27511E75005FD447 /* ProjectWomenApp.swift */,
 				82B9BE9027511E75005FD447 /* ContentView.swift */,
 				82B9BE9227511E77005FD447 /* Assets.xcassets */,
-				82B9BE9727511E77005FD447 /* Persistence.swift */,
 				82B9BE9927511E77005FD447 /* ProjectWomen.xcdatamodeld */,
 				82B9BE9427511E77005FD447 /* Preview Content */,
 			);
@@ -143,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82B9BE9827511E77005FD447 /* Persistence.swift in Sources */,
 				82B9BE9127511E75005FD447 /* ContentView.swift in Sources */,
 				82B9BE9B27511E77005FD447 /* ProjectWomen.xcdatamodeld in Sources */,
 				82B9BE8F27511E75005FD447 /* ProjectWomenApp.swift in Sources */,
