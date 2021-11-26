@@ -14,13 +14,18 @@ struct ContentView: View {
             
             VStack {
                 
-                Color.blue.ignoresSafeArea().padding(.bottom, 130.0)
-                RoundedRectangle(cornerRadius: 25, style: .continuous)
-                    .frame(width: 300.0, height: 200.0)
-                    .foregroundColor(.white)
-                    .roundedBorder(Color.white, width: 3)
+                ZStack{
                     
                     
+                    Rectangle()
+                        .background(.blue)
+                    
+                    Rectangle()
+                        .background(.white)
+                    
+
+                    
+                }
                 
                 
                 
