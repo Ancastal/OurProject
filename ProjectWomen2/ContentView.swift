@@ -10,49 +10,45 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        NavigationView {
+//        NavigationView {
             
-            VStack {
+//            ZStack{
                 
-                ZStack{
+                VStack {
                     
                     
-                    Rectangle()
-                        .background(.blue)
                     
-                    Rectangle()
-                        .background(.white)
                     
-
+                    Rectangle().background(Color.green)
+                    Rectangle().background(Color.orange)
                     
                 }
-                
-                
-                
-                
-                
-                
-                TabView() {
-                    Text("").tabItem {
-                        Image(systemName: "house.fill")
-                        Text("Home")
-                    }.tag(1)
-                    Text("").tabItem {
-                        Image(systemName: "map.fill")
-                        Text("Map")
-                    }.tag(2)
-                }
-                
-                
-                
             }
-            .padding(.bottom)
+//    }
+            
+        }
+//    }
+    
+    
+    
+    
+    //                    TabView() {
+    //                        Text("").tabItem {
+    //                            Image(systemName: "house.fill")
+    //                            Text("Home")
+    //                        }.tag(1)
+    //                        Text("").tabItem {
+    //                            Image(systemName: "map.fill")
+    //                            Text("Map")
+    //                        }.tag(2)
+    //                    }
+    
+    
+    
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
         }
     }
-}
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
