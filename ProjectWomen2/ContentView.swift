@@ -15,17 +15,30 @@ struct ContentView: View {
         //            ZStack{
         
         GeometryReader { metrics in
-            
-            VStack(spacing: 0){
-                Rectangle()
-                    .foregroundColor(.red)
-                    .frame(height:
-                            metrics.size.height * 0.30)
-                Rectangle()
-                    .foregroundColor(.orange)
-                    .frame(height: metrics.size.height * 0.90)
-            }.edgesIgnoringSafeArea(.all)
-            
+            Color.orange.ignoresSafeArea()
+            ZStack{
+                
+                VStack(spacing: 0){
+                    
+                    Rectangle()
+                        .foregroundColor(.blue)
+                        .frame(height:
+                                metrics.size.height * 0.30).overlay(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .foregroundColor(.white)
+                                        .frame(width: metrics.size.width * 0.80,
+                                               height: metrics.size.height * 0.20)
+                                        .offset(x:0, y:120)
+                                        
+
+
+                                )
+                    
+                    
+                    
+                    
+                }.edgesIgnoringSafeArea(.all)
+            }
         }
     }
     //    }
