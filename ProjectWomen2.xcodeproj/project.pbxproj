@@ -23,6 +23,7 @@
 		82B9BEAF27512204005FD447 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		82B9BEB127512206005FD447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82B9BEB427512206005FD447 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82CBF2902752925900088034 /* Ideas.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Ideas.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 				8240C27D2751B95F007E76B2 /* Color.swift */,
 				82B9BEB127512206005FD447 /* Assets.xcassets */,
 				82B9BEB327512206005FD447 /* Preview Content */,
+				82CBF2902752925900088034 /* Ideas.md */,
 			);
 			path = ProjectWomen2;
 			sourceTree = "<group>";

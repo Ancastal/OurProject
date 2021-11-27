@@ -4,6 +4,11 @@
 //
 //  Created by Antonio Castaldo on 26/11/21.
 //
+//  Idea: riempire i dati di domanda e risposte
+//  con un array e chiamare una nuova ContentView
+//  con il nuovo valore dell'array della domanda successiva
+//
+
 
 import SwiftUI
 
