@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8240C27E2751B95F007E76B2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8240C27D2751B95F007E76B2 /* Color.swift */; };
+		8240C28127527A23007E76B2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8240C28027527A23007E76B2 /* HomeView.swift */; };
 		82B9BEAE27512204005FD447 /* ProjectWomen2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9BEAD27512204005FD447 /* ProjectWomen2App.swift */; };
 		82B9BEB027512204005FD447 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9BEAF27512204005FD447 /* ContentView.swift */; };
 		82B9BEB227512206005FD447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B9BEB127512206005FD447 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		8240C27D2751B95F007E76B2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		8240C28027527A23007E76B2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		82B9BEAA27512204005FD447 /* ProjectWomen2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectWomen2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B9BEAD27512204005FD447 /* ProjectWomen2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectWomen2App.swift; sourceTree = "<group>"; };
 		82B9BEAF27512204005FD447 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +36,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8240C27F27527A09007E76B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82B9BEAF27512204005FD447 /* ContentView.swift */,
+				8240C28027527A23007E76B2 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		82B9BEA127512204005FD447 = {
 			isa = PBXGroup;
 			children = (
@@ -53,8 +64,8 @@
 		82B9BEAC27512204005FD447 /* ProjectWomen2 */ = {
 			isa = PBXGroup;
 			children = (
+				8240C27F27527A09007E76B2 /* Views */,
 				82B9BEAD27512204005FD447 /* ProjectWomen2App.swift */,
-				82B9BEAF27512204005FD447 /* ContentView.swift */,
 				8240C27D2751B95F007E76B2 /* Color.swift */,
 				82B9BEB127512206005FD447 /* Assets.xcassets */,
 				82B9BEB327512206005FD447 /* Preview Content */,
@@ -141,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82B9BEB027512204005FD447 /* ContentView.swift in Sources */,
+				8240C28127527A23007E76B2 /* HomeView.swift in Sources */,
 				82B9BEAE27512204005FD447 /* ProjectWomen2App.swift in Sources */,
 				8240C27E2751B95F007E76B2 /* Color.swift in Sources */,
 			);
