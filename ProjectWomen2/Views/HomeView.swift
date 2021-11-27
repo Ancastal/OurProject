@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        
+    NavigationView{
         VStack(alignment: .center, spacing: 8) {
             Spacer()
             HStack{
@@ -17,7 +17,7 @@ struct HomeView: View {
                 Text("Project Women")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    
+                
                 
             }
             
@@ -27,19 +27,20 @@ struct HomeView: View {
                     .scaledToFit()
                 
             }
-            Text("Project Woman is a project carried out by Group 5 of the iOS Foundation Program, tuo support victims of abuse and domestic violence.")
+            Text("Project Woman is a project carried out by Group 5 of the iOS Foundation Program, to support victims of abuse and domestic violence.")
                 .font(.title2)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 50.0)
-                
-
             
-//            Button(action: {
-//                print("Delete tapped!")
-//            }) {
+            
+            
+            //            Button(action: {
+            //                print("Delete tapped!")
+            //            }) {
             Spacer()
             Spacer()
             Spacer()
+            NavigationLink(destination: ContentView()) {
                 Text("Continue")
                     .fontWeight(.semibold)
                     .font(.title)
@@ -48,11 +49,12 @@ struct HomeView: View {
                     .foregroundColor(.white)
                     .background(.black)
                     .cornerRadius(40)
+            }
+            //            }
             
-//            }
-            
-        }
-        
+                    }
+         }
+//        .navigationTitle("")
     }
 }
 
@@ -61,3 +63,4 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
