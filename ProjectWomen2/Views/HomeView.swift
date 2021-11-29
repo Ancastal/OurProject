@@ -40,7 +40,7 @@ struct HomeView: View {
             Spacer()
             Spacer()
             Spacer()
-            NavigationLink(destination: ContentView()) {
+            NavigationLink(destination: TView()) {
                 Text("Continue")
                     .fontWeight(.semibold)
                     .font(.title)
