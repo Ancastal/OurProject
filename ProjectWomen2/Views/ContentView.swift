@@ -13,7 +13,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var didTap:Bool = false
+    @State private var didTap1:Bool = false
+    @State private var didTap2:Bool = false
+    @State private var didTap3:Bool = false
+//    @State private var didTap4:Bool = false
     
     var body: some View {
         NavigationView {
@@ -51,7 +54,7 @@ struct ContentView: View {
                                 RoundedRectangle(cornerRadius: 20)
                                     .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
                                 
-                                    .foregroundColor(.white)
+                                    .foregroundColor(didTap1 ? myColor : .white)
                                     .frame(width: metrics.size.width * 0.9,
                                            height: metrics.size.height * 0.1)
                                     .offset(x:0, y: metrics.size.height * 0.20)
@@ -59,12 +62,16 @@ struct ContentView: View {
                                     .font(.title2)
                                     .fontWeight(.light)
                                     .offset(x:0, y: metrics.size.height * 0.2)
+                                    .onTapGesture {
+                                        self.didTap1 = true
+                                        
+                                    }
                             }
                             
                             ZStack{
                                 RoundedRectangle(cornerRadius: 20)
                                     .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
-                                    .foregroundColor(.white)
+                                    .foregroundColor(didTap2 ? myColor : .white)
                                     .frame(width: metrics.size.width * 0.9,
                                            height: metrics.size.height * 0.1)
                                     .offset(x:0, y: metrics.size.height * 0.22)
@@ -72,17 +79,21 @@ struct ContentView: View {
                                     .font(.title2)
                                     .fontWeight(.light)
                                     .offset(x:0, y: metrics.size.height * 0.22)
+                                    .onTapGesture {
+                                        self.didTap2 = true
+                                        
+                                    }
                             }
                             
                             ZStack{
                                 RoundedRectangle(cornerRadius: 20)
                                     .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
-                                    .foregroundColor(didTap ? myColor : .white)
+                                    .foregroundColor(didTap3 ? myColor : .white)
                                     .frame(width: metrics.size.width * 0.9,
                                            height: metrics.size.height * 0.1)
                                     .offset(x:0, y: metrics.size.height * 0.24)
                                     .onTapGesture {
-                                        self.didTap = true
+                                        self.didTap3 = true
                                         
                                     }
                                 Text("Risposta 3")
@@ -90,20 +101,25 @@ struct ContentView: View {
                                     .fontWeight(.light)
                                     .offset(x:0, y: metrics.size.height * 0.24)
                             }
-                            ZStack{
-                                RoundedRectangle(cornerRadius: 20)
-                                    .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
-                                    .foregroundColor(.white)
-                                    .frame(width: metrics.size.width * 0.9,
-                                           height: metrics.size.height * 0.1)
-                                    .offset(x:0, y: metrics.size.height * 0.26)
-                                Text("Risposta 4")
-                                    .font(.title2)
-                                    .fontWeight(.light)
-                                    .offset(x:0, y: metrics.size.height * 0.26)
-                            }
+//                            ZStack{
+//                                RoundedRectangle(cornerRadius: 20)
+//                                    .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
+//                                    .foregroundColor(didTap4 ? myColor : .white)
+//                                    .frame(width: metrics.size.width * 0.9,
+//                                           height: metrics.size.height * 0.1)
+//                                    .offset(x:0, y: metrics.size.height * 0.26)
+//                                Text("Risposta 4")
+//                                    .font(.title2)
+//                                    .fontWeight(.light)
+//                                    .offset(x:0, y: metrics.size.height * 0.26)
+//                                    .onTapGesture {
+//                                        self.didTap4 = true
+//                                        
+//                                    }
+//                            }
                             
                         }
+                        .padding(.top, 100.0)
                         
                     }.edgesIgnoringSafeArea(.all)
                 }
@@ -134,7 +150,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        }
     }
 }
 
