@@ -22,8 +22,8 @@ struct ContentView: View {
         NavigationView {
             
             //            ZStack{
-            
-            GeometryReader { metrics in
+                
+                        GeometryReader { metrics in
                 
                 ZStack{
                     
@@ -62,7 +62,7 @@ struct ContentView: View {
                                         self.didTap1 = true
                                         
                                     }
-                                Text("Risposta 1")
+                                Text("Frequentemente")
                                     .font(.title2)
                                     .fontWeight(.light)
                                     .offset(x:0, y: metrics.size.height * 0.22)
@@ -80,7 +80,7 @@ struct ContentView: View {
                                         self.didTap2 = true
                                         
                                     }
-                                Text("Risposta 2")
+                                Text("A volte")
                                     .font(.title2)
                                     .fontWeight(.light)
                                     .offset(x:0, y: metrics.size.height * 0.22)
@@ -98,7 +98,7 @@ struct ContentView: View {
                                         self.didTap3 = true
                                         
                                     }
-                                Text("Risposta 3")
+                                Text("No")
                                     .font(.title2)
                                     .fontWeight(.light)
                                     .offset(x:0, y: metrics.size.height * 0.24)
@@ -127,9 +127,11 @@ struct ContentView: View {
             }
             
         }
+        }
+
     }
     
-}
+
 //    }
 
 
