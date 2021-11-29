@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct QuizTable{
+struct QuizTable: Identifiable{
     
     let id =  UUID()
     let domanda: String

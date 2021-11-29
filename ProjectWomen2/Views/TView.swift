@@ -11,8 +11,9 @@ struct TView: View {
     var body: some View {
         TabView() {
             HomeView().tabItem { Label("Home", systemImage: "house.fill") }
+           
+            ContentView().tabItem { Label("Share", systemImage: "magnifyingglass.circle.fill") }
             MapView().tabItem { Label("Map", systemImage: "map.fill") }
-            MoreView().tabItem { Label("Share", systemImage: "square.and.arrow.up.fill") }
             ShareView().tabItem { Label("Info", systemImage: "info.circle.fill") }
         }
         
