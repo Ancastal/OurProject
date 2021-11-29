@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  OnBoardingView.swift
 //  ProjectWomen2
 //
 //  Created by Antonio Castaldo on 27/11/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct OnBoardingView: View {
     var body: some View {
     NavigationView{
         VStack(alignment: .center, spacing: 8) {
@@ -60,7 +60,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        OnBoardingView()
     }
 }
-
