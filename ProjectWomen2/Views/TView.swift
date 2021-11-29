@@ -10,7 +10,7 @@ import SwiftUI
 struct TView: View {
     var body: some View {
         TabView() {
-            ContentView().tabItem { Label("Home", systemImage: "house.fill") }
+            HomeView().tabItem { Label("Home", systemImage: "house.fill") }
             MapView().tabItem { Label("Map", systemImage: "map.fill") }
             MoreView().tabItem { Label("Share", systemImage: "square.and.arrow.up.fill") }
             ShareView().tabItem { Label("Info", systemImage: "info.circle.fill") }

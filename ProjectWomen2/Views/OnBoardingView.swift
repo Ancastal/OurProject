@@ -58,7 +58,7 @@ struct OnBoardingView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct OnBoardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnBoardingView()
     }
