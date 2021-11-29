@@ -120,8 +120,7 @@ struct ContentView: View {
                             //                            }
                             
                         }
-                        
-                        .padding(.top, 200.0)
+
                     }.edgesIgnoringSafeArea(.all)
                 }
             }
