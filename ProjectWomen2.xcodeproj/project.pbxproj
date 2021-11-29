@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		231E26762754E991000A2851 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E26752754E991000A2851 /* MapView.swift */; };
 		231E267A27551239000A2851 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E267927551239000A2851 /* OnBoardingView.swift */; };
+		231E267C275514B0000A2851 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E267B275514B0000A2851 /* Quiz.swift */; };
 		8240C27E2751B95F007E76B2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8240C27D2751B95F007E76B2 /* Color.swift */; };
 		825444CB2754F5280007EAB4 /* TView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825444CA2754F5280007EAB4 /* TView.swift */; };
 		825444CD2754F5F30007EAB4 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825444CC2754F5F30007EAB4 /* MoreView.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		231E26752754E991000A2851 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		231E267927551239000A2851 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		231E267B275514B0000A2851 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		8240C27D2751B95F007E76B2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		825444CA2754F5280007EAB4 /* TView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TView.swift; sourceTree = "<group>"; };
 		825444CC2754F5F30007EAB4 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				82B9BEAF27512204005FD447 /* ContentView.swift */,
+				231E267B275514B0000A2851 /* Quiz.swift */,
 				231E26752754E991000A2851 /* MapView.swift */,
 				825444CA2754F5280007EAB4 /* TView.swift */,
 				825444CC2754F5F30007EAB4 /* MoreView.swift */,
@@ -173,6 +176,7 @@
 				231E267A27551239000A2851 /* OnBoardingView.swift in Sources */,
 				82B9BEAE27512204005FD447 /* ProjectWomen2App.swift in Sources */,
 				8240C27E2751B95F007E76B2 /* Color.swift in Sources */,
+				231E267C275514B0000A2851 /* Quiz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

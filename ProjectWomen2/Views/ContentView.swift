@@ -17,7 +17,7 @@ struct ContentView: View {
     @State private var didTap2:Bool = false
     @State private var didTap3:Bool = false
     //    @State private var didTap4:Bool = false
-    
+    private var x: Int = 0
     var body: some View {
         NavigationView {
             
@@ -42,7 +42,7 @@ struct ContentView: View {
                                         
                                     )
                         
-                        Text("What is your experience with \nthis situation?")
+                        Text(quiz[0])
                             .fontWeight(.light)
                             .multilineTextAlignment(TextAlignment.center)
                             .font(.system(size: 20))
@@ -54,19 +54,19 @@ struct ContentView: View {
                             ZStack{
                                 RoundedRectangle(cornerRadius: 20)
                                     .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
-                                
                                     .foregroundColor(didTap1 ? myColor : .white)
                                     .frame(width: metrics.size.width * 0.9,
                                            height: metrics.size.height * 0.1)
-                                    .offset(x:0, y: metrics.size.height * 0.20)
-                                Text("Risposta 1")
-                                    .font(.title2)
-                                    .fontWeight(.light)
-                                    .offset(x:0, y: metrics.size.height * 0.2)
+                                    .offset(x:0, y: metrics.size.height * 0.22)
                                     .onTapGesture {
                                         self.didTap1 = true
                                         
                                     }
+                                Text("Risposta 1")
+                                    .font(.title2)
+                                    .fontWeight(.light)
+                                    .offset(x:0, y: metrics.size.height * 0.22)
+                                    
                             }
                             
                             ZStack{
@@ -76,14 +76,15 @@ struct ContentView: View {
                                     .frame(width: metrics.size.width * 0.9,
                                            height: metrics.size.height * 0.1)
                                     .offset(x:0, y: metrics.size.height * 0.22)
-                                Text("Risposta 2")
-                                    .font(.title2)
-                                    .fontWeight(.light)
-                                    .offset(x:0, y: metrics.size.height * 0.22)
                                     .onTapGesture {
                                         self.didTap2 = true
                                         
                                     }
+                                Text("Risposta 2")
+                                    .font(.title2)
+                                    .fontWeight(.light)
+                                    .offset(x:0, y: metrics.size.height * 0.22)
+                                    
                             }
                             
                             ZStack{
@@ -120,7 +121,7 @@ struct ContentView: View {
                             //                            }
                             
                         }
-
+                        
                     }.edgesIgnoringSafeArea(.all)
                 }
             }
