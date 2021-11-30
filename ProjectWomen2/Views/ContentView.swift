@@ -40,11 +40,28 @@ struct ContentView: View {
     @State private var x: Int = 0
     
     var body: some View {
+        
         GeometryReader { metrics in
+                
             NavigationView {
-                VStack(spacing: 0){
-                    Text(quiz[x])
-                    
+                VStack(spacing: 0) {
+                    ZStack {
+//                    RoundedRectangle(cornerRadius: 40)
+//                        .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
+//                        .foregroundColor(.white)
+//                        .frame(width: metrics.size.width * 0.8, height: metrics.size.height * 0.3)
+//                        .offset(y: -180)
+                        
+                        
+                        Text(quiz[x])
+                            .multilineTextAlignment(.center)
+                            .padding(.all, 40.0)
+                            .frame(width: 300.0)
+                            .overlay(RoundedRectangle(cornerRadius: 40)
+                                        .strokeBorder(.black, lineWidth: 0.5))
+                                        
+                                        
+                    }
                     Button(action: {
                         
                         if (x < 19) == false {
