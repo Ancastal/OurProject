@@ -53,8 +53,8 @@ struct ContentView: View {
                         .frame(width: 300.0)
                         .overlay(RoundedRectangle(cornerRadius: 40)
                                     .strokeBorder(.black, lineWidth: 0.5))
-                        .offset(y: -150)
-                        .
+//                        .offset(y: -150)
+                        .position(x: metrics.size.width * 0.5, y: metrics.size.height * 0.05)
                     
 //                    VStack(spacing: 0) {
                     Button(action: {
@@ -113,8 +113,8 @@ struct ContentView: View {
                     }
                     }
                     
-                    Text("Count: \(x)" + "-20\nScore: \(score)")
-                        .offset(y: 80)
+//                    Text("Count: \(x)" + "-20\nScore: \(score)")
+                        
                 }
             }
             .navigate(to: MapView(), when: $willMoveToNextScreen)
