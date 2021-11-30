@@ -42,26 +42,21 @@ struct ContentView: View {
     var body: some View {
         
         GeometryReader { metrics in
-                
+            
             NavigationView {
-                VStack(spacing: 0) {
-                    ZStack {
-//                    RoundedRectangle(cornerRadius: 40)
-//                        .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(.black, lineWidth: 0.5))
-//                        .foregroundColor(.white)
-//                        .frame(width: metrics.size.width * 0.8, height: metrics.size.height * 0.3)
-//                        .offset(y: -180)
-                        
-                        
-                        Text(quiz[x])
-                            .multilineTextAlignment(.center)
-                            .padding(.all, 40.0)
-                            .frame(width: 300.0)
-                            .overlay(RoundedRectangle(cornerRadius: 40)
-                                        .strokeBorder(.black, lineWidth: 0.5))
-                                        
-                                        
-                    }
+                VStack {
+
+                    Text(quiz[x])
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .padding(.all, 40.0)
+                        .frame(width: 300.0)
+                        .overlay(RoundedRectangle(cornerRadius: 40)
+                                    .strokeBorder(.black, lineWidth: 0.5))
+                        .offset(y: -150)
+                        .
+                    
+//                    VStack(spacing: 0) {
                     Button(action: {
                         
                         if (x < 19) == false {
@@ -73,6 +68,13 @@ struct ContentView: View {
                         
                     }) {
                         Text("Si")
+                            .frame(width: metrics.size.width, height: 70)
+                            .overlay(
+                                Rectangle()
+                                    .strokeBorder(.black, lineWidth: 0.25)
+                                    .frame(width: .infinity)
+                            )
+                        
                     }
                     Button(action: {
                         if (x < 19) == false {
@@ -84,6 +86,12 @@ struct ContentView: View {
                         
                     }) {
                         Text("No")
+                            .frame(width: metrics.size.width, height: 70)
+                            .overlay(
+                                Rectangle()
+                                    .strokeBorder(.black, lineWidth: 0.25)
+                                    .frame(width: .infinity)
+                            )
                     }
                     Button(action: {
                         
@@ -96,15 +104,23 @@ struct ContentView: View {
                         
                     }) {
                         Text("Forse")
+                            .frame(width: metrics.size.width, height: 70)
+                            .overlay(
+                                Rectangle()
+                                    .strokeBorder(.black, lineWidth: 0.25)
+                                    .frame(width: .infinity)
+                            )
+                    }
                     }
                     
                     Text("Count: \(x)" + "-20\nScore: \(score)")
+                        .offset(y: 80)
                 }
             }
             .navigate(to: MapView(), when: $willMoveToNextScreen)
         }
         
-    }
+//    }
 }
 
 struct ContentView_Previews: PreviewProvider {
