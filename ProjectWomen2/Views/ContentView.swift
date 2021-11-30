@@ -99,7 +99,7 @@ struct ContentView: View {
                                 .offset(x:0, y: metrics.size.height * 0.22)
                                 .onTapGesture {
                                     self.didTap1 = true
-                                    if (x < 20) {
+                                    if (x < 19) {
                                     x += 1
                                     } else {
                                         willMoveToNextScreen = true
@@ -125,7 +125,7 @@ struct ContentView: View {
                             .offset(x:0, y: metrics.size.height * 0.22)
                             .onTapGesture {
                                 self.didTap2 = true
-                                if (x < 20) {
+                                if (x < 19) {
                                 x += 1
                                 } else {
                                     willMoveToNextScreen = true
@@ -151,7 +151,7 @@ struct ContentView: View {
                         .offset(x:0, y: metrics.size.height * 0.24)
                         .onTapGesture {
                             self.didTap3 = true
-                            if (x < 20) {
+                            if (x < 19) {
                             x += 1
                             } else {
                                 willMoveToNextScreen = true
