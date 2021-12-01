@@ -18,7 +18,7 @@ extension View {
                 self.navigationBarTitle("")
                     .navigationBarHidden(true)
                 NavigationLink(destination: view
-                                .navigationBarTitle("")
+                                .navigationBarTitle("awefwefwaffw")
                                 .navigationBarHidden(true),
                                isActive: binding
                 ) {
