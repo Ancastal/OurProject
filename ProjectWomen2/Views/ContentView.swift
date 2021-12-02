@@ -18,7 +18,7 @@ extension View {
                 self.navigationBarTitle("")
                     .navigationBarHidden(true)
                 NavigationLink(destination: view
-                                .navigationBarTitle("awefwefwaffw")
+                                .navigationBarTitle("")
                                 .navigationBarHidden(true),
                                isActive: binding
                 ) {
@@ -32,12 +32,13 @@ extension View {
 
 struct ContentView: View {
     
-    @State private var didTap1:Bool = false
-    @State private var didTap2:Bool = false
-    @State private var didTap3:Bool = false
     @State private var score:Double = 0.0
     @State private var willMoveToNextScreen = false
     @State private var x: Int = 0
+    private var didTap1:Bool = false
+    private var didTap2:Bool = false
+    private var didTap3:Bool = false
+    
     
     var body: some View {
         
