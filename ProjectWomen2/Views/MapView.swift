@@ -76,7 +76,7 @@ class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
             print("Authorized")
             manager.startUpdatingLocation()
         } else {
-            print("not authorizeeed")
+            print("not authorizeeeeed")
             manager.requestWhenInUseAuthorization()
         }
     }
