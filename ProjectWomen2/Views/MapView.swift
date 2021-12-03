@@ -10,7 +10,12 @@ struct MyPin: Identifiable {
 }
 
 
-
+// Map pins for update
+struct Pin : Identifiable{
+    
+    var id = UUID()
+    var location : CLLocation
+}
 
 
 struct MapView: View {
@@ -50,7 +55,7 @@ struct Home: View{
 }
 
 class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
-    @Published var pins : [Pin] = []
+    var pins : [Pin] = []
     
     // From here and down is new
     @Published var location: CLLocation?
@@ -81,21 +86,19 @@ class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         
-        //Creo array di myPin
-        var myPin: [Pin] = [
+//        Creo array myPin
+        let myPin: [Pin] = [
             Pin(location: CLLocation(latitude:40.905342, longitude:14.390889)),
             Pin(location: CLLocation(latitude:40.913137, longitude:14.392013))
         ]
 
-        
+        pins = []
         pins.append(Pin(location:locations.last!))
-        pins.append(Pin(location: CLLocation(latitude:40.905342, longitude:14.390889)))
-        pins.append(Pin(location: CLLocation(latitude:40.913137, longitude:14.392013)))
         
-        ForEach (myPin, id: \.id) { i in
-            pins.append(i)
-
+        for pin in myPin {
+            pins.append(pin)
         }
+    
         
         // From here and down is new
         if let location = locations.last {
@@ -113,8 +116,3 @@ class locationDelegate: NSObject,ObservableObject,CLLocationManagerDelegate{
 
 
 
-// Map pins for update
-struct Pin : Identifiable {
-    var id = UUID().uuidString
-    var location : CLLocation
-}

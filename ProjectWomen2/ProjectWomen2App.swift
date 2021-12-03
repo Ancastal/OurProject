@@ -11,7 +11,8 @@ import SwiftUI
 struct ProjectWomen2App: App {
     var body: some Scene {
         WindowGroup {
-            MapView()
+            OnBoardingView()
+            
         }
     }
 }
